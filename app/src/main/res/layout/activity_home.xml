@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:padding="4dp"
+    android:orientation="vertical"
+
+    tools:context="com.example.administrator.mylive.activity.HomeActivity">
+
+    <com.example.administrator.mylive.view.LineMenuView
+        android:id="@+id/lmv_host"
+        android:icon = "@mipmap/ic_ilvb"
+        android:title = "@string/str_menu_host"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.administrator.mylive.view.LineMenuView
+        android:id="@+id/lmv_guest"
+        android:icon = "@mipmap/ic_play"
+        android:title = "@string/str_menu_guest"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.example.administrator.mylive.view.LineMenuView
+        android:id="@+id/event_live"
+        android:icon = "@mipmap/ic_play"
+        android:title = "@string/str_menu_guest"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

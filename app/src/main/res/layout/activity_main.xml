@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.mylive.activity.MainActivity">
+
+    <com.tencent.ilivesdk.view.AVRootView
+        android:id="@+id/arv_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <EditText
+        android:hint="输入房间号"
+        android:textColorHint="#fff"
+        android:phoneNumber="true"
+        android:textColor="#fff"
+        android:id="@+id/roomnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/startlive"
+        android:text="开始直播"
+        android:layout_below="@id/roomnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/danmu"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/roomnum"
+        />
+
+
+    <ScrollView
+        android:id="@+id/sv_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp">
+        <TextView
+            android:id="@+id/tv_msg"
+            android:gravity="bottom"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</RelativeLayout>

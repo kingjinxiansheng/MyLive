@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.mylive.activity.WatchLiveActivity">
+
+
+    <com.tencent.ilivesdk.view.AVRootView
+        android:id="@+id/watch_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <EditText
+        android:id="@+id/watch_edit"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:hint="请输入观看房间号"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/watch_looklive"
+        android:layout_below="@id/watch_edit"
+        android:text="@string/str_menu_guest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/danmu"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/watch_edit"
+        />
+
+
+    <ScrollView
+        android:id="@+id/sv_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/watch_edit_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/tv_msg"
+            android:gravity="bottom"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <EditText
+        android:layout_alignParentBottom="true"
+        android:id="@+id/watch_edit_text"
+        android:hint="请输入评论信息"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="发送"
+        android:id="@+id/watch_btn_text"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/watch_btn_danmu"
+        android:text="弹幕"
+        android:layout_toLeftOf="@id/watch_btn_text"
+        android:layout_alignBottom="@id/watch_btn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
